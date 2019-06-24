@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+}
+
+main {
+  display:flex;
+  flex-direction:row;
+}
+
+.candidateDetails {
+  width:70vw;
+}
+
+.candidateDetails, .candidateList{
+  display:flex;
+  flex-direction:column;
+}
+
+.candidateList {
+  width:25vw;
+}
+
+textarea, button {
+  max-width:50%;
+}
+
+
