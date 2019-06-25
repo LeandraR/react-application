@@ -67,7 +67,7 @@ export const applicationsCommentAdded = payload =>({
   payload
 })
 
-export const fetchApplication = id => {
+export const postComments = id => {
   return dispatch => {
     // fetch(`http://localhost:3010/applications/${id}`, {
     //   method: "PUT",
