@@ -1,3 +1,8 @@
+I wanted to use Redux from the beginning, as it is much easier to implement from the start rather than re-factor in the future!  I would improve upon it by also using Redux forms npm package to make the form submission run more smoothly :)
+
+I would like to finish the PUT route for the comments!  Also, a LOT of CSS.  I didn't touch much styling other than arranging components.  I could make it look a lot nicer with a bit more time.
+
+
 # Knockri Full Stack (React) Coding Assessment
 
 ## Overview
