@@ -67,6 +67,23 @@ export const applicationsCommentAdded = payload =>({
   payload
 })
 
+export const fetchApplication = id => {
+  return dispatch => {
+    // fetch(`http://localhost:3010/applications/${id}`, {
+    //   method: "PUT",
+    //   body: JSON.stringify(data)
+    // })
+    //   .then(res =>
+    //     !res.ok ? Promise.reject('Something went wrong :(') : res.json()
+    //   )
+    //   .then(data => {
+    //     dispatch(applicationsCommentAdded(data));
+    //   })
+    //   .catch(() => dispatch(applicationsCallFailed()));
+
+  };
+};
+
 
 //questions
 export const startQuestionsAPI = () => ({
