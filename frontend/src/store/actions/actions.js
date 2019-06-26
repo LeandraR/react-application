@@ -67,19 +67,22 @@ export const applicationsCommentAdded = payload =>({
   payload
 })
 
-export const postComments = id => {
+export const postComments = (userId, questionId, data) => {
   return dispatch => {
+    console.log(userId, questionId, data)
     // fetch(`http://localhost:3010/applications/${id}`, {
     //   method: "PUT",
     //   body: JSON.stringify(data)
     // })
-    //   .then(res =>
-    //     !res.ok ? Promise.reject('Something went wrong :(') : res.json()
-    //   )
-    //   .then(data => {
-    //     dispatch(applicationsCommentAdded(data));
-    //   })
-    //   .catch(() => dispatch(applicationsCallFailed()));
+    // .then(res => res.json())
+    // .then(res => console.log(res))
+      // .then(res =>
+      //   !res.ok ? Promise.reject('Something went wrong :(') : res.json()
+      // )
+      // .then(data => {
+      //   dispatch(applicationsCommentAdded(data));
+      // })
+      // .catch(() => dispatch(applicationsCallFailed()));
 
   };
 };

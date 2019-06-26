@@ -15,7 +15,7 @@ class CandidateVideo extends Component {
                 <video width='25%' height='auto' controls>
                     <source src={this.props.video} type='video/mp4' />
                 </video>
-                <CandidateComments />
+                <CandidateComments id={this.props.id} question={questionToDisplay}/>
             </>
         );
     }

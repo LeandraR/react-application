@@ -26,8 +26,11 @@ const applicationsReducer = (state = initialState, action) => {
         case 'APPLICATIONS_COMMENT_MADE':
             return {
                 ...state,
-                applicationDetails: action.payload
-            }
+                // applicationDetails: state.applicationDetails.map(
+                //         item => item.id === action.payload.id ? action.payload : item
+                //         //ids not the same, return original item
+                // )
+            };
         default:
             return state;
     }

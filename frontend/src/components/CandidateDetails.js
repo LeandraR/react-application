@@ -18,8 +18,6 @@ class CandidateDetails extends Component {
         }
     }
 
-
-
     render(){
         const currentName = this.props ? this.props.candidates.filter(person => person.applicationId === this.props.application.id) : "";
 
@@ -27,7 +25,7 @@ class CandidateDetails extends Component {
         <div className="candidateDetails">
             <h2>{currentName.map(obj => obj.name)}'s Application:</h2>
             {!this.props.loading ? this.props.application.videos.map(vid => (
-                <CandidateVideo video={vid.src} key={vid.src} question={vid.questionId}/>
+                <CandidateVideo video={vid.src} key={vid.src} question={vid.questionId} id={this.props.application.id}/>
                 ))
             : "" }
         </div>
